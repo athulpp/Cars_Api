@@ -48,9 +48,21 @@ class CategoryBody extends StatelessWidget {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 14),
                                   ),
-                                  TextButton(
-                                    onPressed: () {},
-                                    child: Text(uri[index]['car_name']),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(1),
+                                      ),
+                                      border: Border.all(
+                                        width: 2,
+                                        color: Colors.red,
+                                        style: BorderStyle.solid,
+                                      ),
+                                    ),
+                                    child: TextButton(
+                                      onPressed: () {},
+                                      child: Text(uri[index]['car_name']),
+                                    ),
                                   ),
                                 ],
                               ),
@@ -63,7 +75,22 @@ class CategoryBody extends StatelessWidget {
                                 color: Colors.blueAccent.shade100,
                                 child: Row(
                                   children: [
-                                    Icon(Icons.car_repair),
+                                    Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.only(
+                                            topRight: Radius.circular(1),
+                                          ),
+                                          border: Border.all(
+                                            width: 2,
+                                            color: Colors.white,
+                                            style: BorderStyle.solid,
+                                          ),
+                                        ),
+                                        child: Icon(
+                                          Icons.car_repair,
+                                          color: Colors.red,
+                                        )),
                                     horizontalSize,
                                     Text(uri[index]['car_transmission']),
                                     horizontalSize,
@@ -76,7 +103,22 @@ class CategoryBody extends StatelessWidget {
                                 color: Colors.blueAccent.shade100,
                                 child: Row(
                                   children: [
-                                    Icon(Icons.car_repair),
+                                    Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.only(
+                                            topRight: Radius.circular(1),
+                                          ),
+                                          border: Border.all(
+                                            width: 2,
+                                            color: Colors.white,
+                                            style: BorderStyle.solid,
+                                          ),
+                                        ),
+                                        child: Icon(
+                                          Icons.car_repair,
+                                          color: Colors.red,
+                                        )),
                                     horizontalSize,
                                     Text(uri[index]['car_wheelType']),
                                     horizontalSize,
@@ -89,7 +131,23 @@ class CategoryBody extends StatelessWidget {
                                 color: Colors.blueAccent.shade100,
                                 child: Row(
                                   children: [
-                                    Icon(Icons.car_repair),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(1),
+                                        ),
+                                        border: Border.all(
+                                          width: 2,
+                                          color: Colors.white,
+                                          style: BorderStyle.solid,
+                                        ),
+                                      ),
+                                      child: Icon(
+                                        Icons.lightbulb_outline,
+                                        color: Colors.red,
+                                      ),
+                                    ),
                                     horizontalSize,
                                     Text(uri[index]['car_headlightType']),
                                     horizontalSize,
