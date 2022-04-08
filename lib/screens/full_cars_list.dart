@@ -45,9 +45,9 @@ class AllCarsList extends StatelessWidget {
                                       maxLines: 1,
                                     ),
                                   ),
-                                  VerticalDivider(
-                                    width: 10,
-                                    thickness: 9,
+                                  const VerticalDivider(
+                                    width: 20,
+                                    thickness: 20,
                                     color: Colors.black,
                                   ),
                                 ],
@@ -56,30 +56,42 @@ class AllCarsList extends StatelessWidget {
                                 children: [
                                   Row(
                                     children: [
-                                      Icon(Icons.car_repair),
-                                      Text('WheelType    :'),
-                                      Text('   Wheeltest'),
+                                      Icon(
+                                        Icons.car_repair,
+                                        color: Colors.red,
+                                      ),
+                                      Text('Transmission   '),
+                                      Text('   Test0.7453'),
                                     ],
                                   ),
                                   Row(
                                     children: [
-                                      Icon(Icons.car_repair),
-                                      Text('Transmission    :'),
-                                      Text('   Test.07453'),
+                                      Icon(
+                                        Icons.circle_outlined,
+                                        color: Colors.red,
+                                      ),
+                                      Text('Wheel Type   '),
+                                      Text('       Wheeltest'),
                                     ],
                                   ),
                                   Row(
                                     children: [
-                                      Icon(Icons.car_repair),
-                                      Text('Transmission    :'),
-                                      Text('   Test.07453'),
+                                      Icon(
+                                        Icons.car_repair_sharp,
+                                        color: Colors.red,
+                                      ),
+                                      Text('Suspension    '),
+                                      Text('      Dual345'),
                                     ],
                                   ),
                                   Row(
                                     children: [
-                                      Icon(Icons.car_repair),
-                                      Text('Transmission    :'),
-                                      Text('   Test.07453'),
+                                      Icon(
+                                        Icons.lightbulb_outline,
+                                        color: Colors.red,
+                                      ),
+                                      Text('Head Light   '),
+                                      Text('        Test.07453'),
                                     ],
                                   ),
                                 ],
